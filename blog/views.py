@@ -4,13 +4,13 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        'judul':'About',
+        'judul':'Blog',
         'page':'Salupa',
-        'banner':'img/banner_about.png',
+        'banner':'img/banner_blog.png',
         'nav': [
             ['/','Home'],
             ['/blog','Blog'],
             ['/about','About'],
         ]
     }
-    return render(request,'home.html',context)
+    return render(request,'home.html', context)
